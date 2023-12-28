@@ -16,7 +16,7 @@ const Signup: React.FC = () => {
         console.log('Signup Attempt:', phone, email, password);
 
       try {
-        const {data} = await axios.post("http://localhost:8000/register",{
+        const {data} = await axios.post("https://sassy-server.onrender.com/register",{
             full_name,
             phone,
             email,
